@@ -1,9 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET,POST,PUT,DELETE, OPTIONS");
 require '../config.php';
-
-
 function login($user, $pwd)
 {
     $authQuery = "SELECT * FROM users WHERE user_name = '$user' AND password = '$pwd'";
